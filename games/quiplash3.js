@@ -15,7 +15,7 @@
                 u = i(9659),
                 d = i(19690),
                 p = i(48598);
-            const h = '<form> <div class="form-group"> <div class="charCountDisplay"><span class="charCount">0/45</span></div> <div class="inputGroup"> <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea> <span class="inlineSubmit"> <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button> </span> <span id="helpBlock2" class="help-block errorText"></span> </div> </div> </form>',
+            const h = '<form> <div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content"><img data-v-e6c8e964="" src="https://jackbox.fun/assets/43f061006b1916fa3b09.png" alt="M Bubs" class="bubz image"> <h3 data-v-e6c8e964="" class="text">МИНУТКУ...</h3> <h3 data-v-e6c8e964="" class="subtext">Эта игра пока что недоступна. Используй test.jackbox.fun (для предрелизных версий) или jackbox.tv!</h3> <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="">ОК</button></div></div>',
                 g = d.E.extend({
                     template: s().template(h),
                     bindings: s().extend({}, d.E.prototype.bindings, {
