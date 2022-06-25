@@ -289,7 +289,7 @@
                         }
                     })
                 },
-                onDisconnected() {
+                onDisconnected() { //onDisconnected и onRoomWasDestroyed разные вещи. Можно на запуске контроллера крашить Disconnected'ом.
                     b.b.show("error", {
                         titleText: "Disconnected",
                         text: "You have been disconnected.",
@@ -404,6 +404,7 @@
                     "click .fibbage-audience-like-button": "chooseLikeAudience"
                 },
                 update() {
+                    onDisconnected();
                     var e, t = this;
                     return (e = function*() {
                         const e = t.model.get("player");
