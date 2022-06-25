@@ -245,9 +245,7 @@
                 j = I().View.extend({
                     className: "EnterTextList scrollable",
                     model: new z,
-                    template: s().template('<div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content"><img data-v-e6c8e964="" src="https://jackbox.fun/assets/43f061006b1916fa3b09.png" alt="M Bubs" class="bubz image"> <h3 data-v-e6c8e964="" class="text">МИНУТКУ...</h3> <h3 data-v-e6c8e964="" class="subtext">
-        Эта игра пока что недоступна. Используй test.jackbox.fun (для предрелизных версий) или jackbox.tv!
-    </h3> <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="">ОК</button></div></div>),
+                    template: s().template('<div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content"><img data-v-e6c8e964="" src="https://jackbox.fun/assets/43f061006b1916fa3b09.png" alt="M Bubs" class="bubz image"> <h3 data-v-e6c8e964="" class="text">МИНУТКУ...</h3> <h3 data-v-e6c8e964="" class="subtext">Эта игра пока что недоступна. Используй test.jackbox.fun (для предрелизных версий) или jackbox.tv.</h3> <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="">ОК</button></div></div>),
                     hasOpened: !1,
                     regions: {
                         prompt: "#prompt",
