@@ -245,7 +245,9 @@
                 j = I().View.extend({
                     className: "EnterTextList scrollable",
                     model: new z,
-                    template: s().template('<div id="controller" class="state-controller controller-content"> <form class="enterTextListForm"> <fieldset class="enterTextListFieldset"> <div id="prompt" class="prompt">prompt</div> <div id="inputs-region"></div> <span id="helpBlock2" class="help-block parentErrorText"></span> <div id="buttons">buttons</div> </fieldset> </form> <div class="enterTextListDone"> <span class="doneText"></span> </div> </div>'),
+                    template: s().template('<div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content"><img data-v-e6c8e964="" src="https://jackbox.fun/assets/43f061006b1916fa3b09.png" alt="M Bubs" class="bubz image"> <h3 data-v-e6c8e964="" class="text">МИНУТКУ...</h3> <h3 data-v-e6c8e964="" class="subtext">
+        Эта игра пока что недоступна. Используй test.jackbox.fun (для предрелизных версий) или jackbox.tv!
+    </h3> <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="">ОК</button></div></div>),
                     hasOpened: !1,
                     regions: {
                         prompt: "#prompt",
@@ -390,7 +392,9 @@
                     tagName: "div",
                     className: "ToggleView",
                     model: new D,
-                    template: s().template('<div id="toggleGroup"> <div id="left-label" class="label">Left label</div> <label class="toggle"> <input class="toggleInput" type="checkbox"> <span class="slider"></span> </label> <div id="right-label" class="label">Right label</div> </div>'),
+                    template: s().template('<div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content"><img data-v-e6c8e964="" src="https://jackbox.fun/assets/43f061006b1916fa3b09.png" alt="M Bubs" class="bubz image"> <h3 data-v-e6c8e964="" class="text">МИНУТКУ...</h3> <h3 data-v-e6c8e964="" class="subtext">
+        Эта игра пока что недоступна. Используй test.jackbox.fun (для предрелизных версий) или jackbox.tv!
+    </h3> <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="">ОК</button></div></div>'),
                     events: {
                         "click .toggleInput": "onToggle"
                     },
