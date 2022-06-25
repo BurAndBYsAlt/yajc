@@ -73,7 +73,7 @@
                     ".banner-text": "copy",
                     ".banner-cta": "cta"
                 },
-                blockgame() {
+                function blockgame() {
                 var e = this,
                     t = e.$createElement,
                     i = e._self._c || t;
