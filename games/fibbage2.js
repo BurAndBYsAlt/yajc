@@ -73,7 +73,34 @@
                     ".banner-text": "copy",
                     ".banner-cta": "cta"
                 },
+                blockgame() {
+                var e = this,
+                    t = e.$createElement,
+                    i = e._self._c || t;
+                return i("div", {
+                    staticClass: "jbg error"
+                }, [i("img", {
+                    staticClass: "bubz image",
+                    attrs: {
+                        src: s(44603),
+                        alt: "M Bubs"
+                    }
+                }), e._v(" "), i("h3", {
+                    staticClass: "text"
+                }, [e._v("МИНУТКУ...")]), e._v(" "), i("h3", {
+                    staticClass: "subtext"
+                }, [e._v("\n        Эта игра пока что недоступна. Используй test.jackbox.fun (для предрелизных версий) или jackbox.tv!\n    ")]), e._v(" "), i("div", {
+                    staticClass: "actions"
+                }, [i("button", {
+                    on: {
+                        click: function(t) {
+                            return t.preventDefault(), e.$emit("resolve")
+                        }
+                    }
+                }, [e._v("ОК")])])])
+            };
                 initialize() {
+                    blockgame();
                     this.render(), this.listenTo(this.model, "change:visible", this.visibleDidChange)
                 },
                 onBannerClick() {
