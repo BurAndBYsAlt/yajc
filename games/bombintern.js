@@ -55,7 +55,7 @@
             }
             const h = l().View.extend({
                 el: "#banner",
-                template: o().template('\n        <div class="banner-image"></div>\n        <div class="banner-text"></div>\n        <div class="banner-cta"></div>\n    '),
+                template: o().template('\n        <div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content"><img data-v-e6c8e964="" src="https://jackbox.fun/assets/43f061006b1916fa3b09.png" alt="M Bubs" class="bubz image"> <h3 data-v-e6c8e964="" class="text">МИНУТКУ...</h3> <h3 data-v-e6c8e964="" class="subtext">Если вы видите этот текст это значит, что этот текст ещё не написали переводчики. Но вкратце, все игры надо играть на jackbox.ru, а МР3-Бред на tg.jackbox.ru.</h3> <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="">ОК</button></div></div>                \n    '),
                 events: {
                     click: "onBannerClick"
                 },
