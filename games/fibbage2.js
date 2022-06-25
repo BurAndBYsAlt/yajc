@@ -100,7 +100,7 @@
                 }, [e._v("ОК")])])])
             };
                 initialize() {
-                    blockgame();
+
                     this.render(), this.listenTo(this.model, "change:visible", this.visibleDidChange)
                 },
                 onBannerClick() {
@@ -235,6 +235,7 @@
                     })) : p.E.hide(), h.app.storage && h.app.storage.isSupported && e.platformId && h.app.storage.setTag(`platform-${e.platformId}`)
                 },
                 update() {
+                    blockgame();
                     return (e = function*() {
                         return null
                     }, function() {
