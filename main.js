@@ -588,7 +588,7 @@
                         },
                         we = function(e) {
                             for (var t = [], n = ye[e] || [], r = 0; r < n.length; r++) n[r] && (t[Math.floor(r / 6)] ^= 1 << r % 6);
-                            for (var i = 0; i < t.length; i++) t[i] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_".charAt(t[i] || 0);
+                            for (var i = 0; i < t.length; i++) t[i] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя".charAt(t[i] || 0);
                             return t.join("")
                         },
                         ke = function(e) {
@@ -1044,7 +1044,7 @@
 
                     function Dt(e) {
                         At = At || function() {
-                            var e = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                            var e = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
                             return (e += e.toLowerCase() + "0123456789-_") + "."
                         }(), Gt = Gt || function() {
                             for (var e = At, t = {}, n = 0; n < e.length; ++n) t[e[n]] = n;
