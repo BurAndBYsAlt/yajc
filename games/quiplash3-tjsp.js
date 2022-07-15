@@ -1947,10 +1947,8 @@
                         }).catch(this.$handleEcastError)
                     },
                     onInputPrompt() {
-                        this.promptText = G.c.sanitizeInput(this.promptText)
                     },
                     onInputTitle() {
-                        this.titleText = G.c.sanitizeInput(this.titleText)
                     },
                     onPromptClick(e) {
                         this.$ecast.updateObject(this.player.responseKey, {
