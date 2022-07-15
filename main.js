@@ -4582,14 +4582,14 @@
                         return (n ? "#" : "") + o
                     }
                     static sanitize(e) {
-                        const t = this.sanitizeInput(e).replace(/'/g, "’");
+                        const t = this.sanitizeInput(e);
                         return this.htmlEscape(t).trim()
                     }
                     static sanitizeName(e) {
-                        return e.replace(/[^A-Z0-9\u0400-\u04FF\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+                        return e
                     }
                     static sanitizeInput(e) {
-                        return e.replace(/[^\u0400-\u04FF\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+                        return e
                     }
                     static isInTolerance(e, t, n) {
                         return !(Math.abs(e.x - t.x) < n || Math.abs(e.y - t.y) > n)
