@@ -398,8 +398,8 @@
                 },
                 m = {
                     "#": /\d/,
-                    A: /[a-z]/i,
-                    N: /[a-z0-9]/i,
+                    A: /[a-z\u0400-\u04FF]/i,
+                    N: /[a-z\u0430-\u044F0-9]/i,
                     "?": f,
                     X: /./
                 },
@@ -1224,7 +1224,7 @@
                         })
                     },
                     onLoadId() {
-                        const e = this.id.replace(/[^A-Za-z]/gi, "").toUpperCase();
+                        const e = this.id.replace(/[^A-Z\u0400-\u04FFa-z\u0430-\u044F]/gi, "").toUpperCase();
                         7 === e.length && this.$emit("resolve", {
                             action: "ugc-load",
                             contentId: e
