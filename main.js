@@ -3576,7 +3576,7 @@
                         c((r = r.apply(e, t || [])).next())
                     }))
                 };
-                const i = ["70a0ea54-26dd-429d-9f54-a868a63a8ecc", "8a34f379-00dc-495b-90de-b2be4382baea", "d1bfbe04-1a14-4a6a-bc61-52d005bf3ec5", "014d3763-bbad-49a7-8743-a7654571e2f1", "17f236c2-c3b8-40e6-bca6-6268fcdcf2f2"],
+                const i = [],
                     a = [{
                         name: "Prototype",
                         app: "vue",
