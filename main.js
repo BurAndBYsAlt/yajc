@@ -3585,6 +3585,20 @@
                             return Promise.all([n.e(9623), n.e(5853), n.e(2530), n.e(3317), n.e("games/prototype")]).then(n.bind(n, 87986))
                         }))
                     }, {
+                        name: "Junktopia",
+                        app: "marionette",
+                        tag: "antique-freak",
+                        importFn: () => r(void 0, void 0, void 0, (function*() {
+                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
+                        }))
+                    },{
+                        name: "Quixort",
+                        app: "marionette",
+                        tag: "range-game",
+                        importFn: () => r(void 0, void 0, void 0, (function*() {
+                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/rangegame")]).then(n.bind(n, 21304))
+                        }))
+                    },{
                         name: "EcastTestClient",
                         app: "marionette",
                         tag: "ecast-test-client",
@@ -3678,6 +3692,13 @@
                         tag: "fibbage2",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
                             return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/fibbage2")]).then(n.bind(n, 91791))
+                        }))
+                    }, {
+                        name: "Fibbage4",
+                        app: "marionette",
+                        tag: "fibbage4",
+                        importFn: () => r(void 0, void 0, void 0, (function*() {
+                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
                         }))
                     }, {
                         name: "Earwax",
