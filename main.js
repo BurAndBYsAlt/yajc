@@ -3694,13 +3694,27 @@
                             return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/fibbage2")]).then(n.bind(n, 91791))
                         }))
                     }, {
-                        name: "Fibbage4",
+                        name: "Fibbage 4",
                         app: "marionette",
                         tag: "fourbage",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
                             return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
                         }))
                     }, {
+                        name: "Nonsensory",
+                        app: "marionette",
+                        tag: "range-game",
+                        importFn: () => r(void 0, void 0, void 0, (function*() {
+                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
+                        }))
+                    },{
+                        name: "Roomerang",
+                        app: "marionette",
+                        tag: "htmf",
+                        importFn: () => r(void 0, void 0, void 0, (function*() {
+                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
+                        }))
+                    },{
                         name: "Earwax",
                         app: "marionette",
                         tag: "earwax",
