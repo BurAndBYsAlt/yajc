@@ -3594,9 +3594,9 @@
                     },{
                         name: "Quixort",
                         app: "marionette",
-                        tag: "range-game",
+                        tag: "lineup",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
-                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/rangegame")]).then(n.bind(n, 21304))
+                            return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
                         }))
                     },{
                         name: "EcastTestClient",
@@ -3696,7 +3696,7 @@
                     }, {
                         name: "Fibbage4",
                         app: "marionette",
-                        tag: "fibbage4",
+                        tag: "fourbage",
                         importFn: () => r(void 0, void 0, void 0, (function*() {
                             return Promise.all([n.e(6498), n.e(524), n.e(6368), n.e(972), n.e("games/prototype")]).then(n.bind(n, 21304))
                         }))
