@@ -418,7 +418,7 @@
                                 switch (o()(".bombintern-rules").html(""), e.lastPuzzle = a, a) {
                                     case "SmashPuzzle":
                                         if (e.$el.find("#bombintern-smashpuzzle-triggers").html(""), e.buildRuleFolder(a, "bombintern-smashpuzzle-rules"), !0 === r.smasher) {
-                                            t = "<div class='bomb-header' id='button-header'><span>PRESS BELOW TO SMASH SOMETHING</span></div>";
+                                            t = "<div class='bomb-header' id='button-header'><span>ЖМИ КНОПКИ НИЖЕ ЧТОБЫ ЧТО-ТО РАЗБИТЬ</span></div>";
                                             for (let e = 0; e < r.triggers.length; ++e) {
                                                 const n = r.triggers[e];
                                                 t += `<button type='button' data-param='${n.object}' class='pure-input-1 bombintern-smashpuzzle-button button-large pure-button button-bombintern' ${n.hasBeenSmashed?"disabled":""}>${n.object}</button>`
@@ -429,10 +429,10 @@
                                         break;
                                     case "WiredBomb":
                                         if (e.$el.find("#bombintern-wiredbomb-triggers").html(""), e.buildRuleFolder(a, "bombintern-wiredbomb-rules"), r.triggers && r.triggers.length > 0) {
-                                            t = "<div class='bomb-header' id='button-header'><span>TAP BUTTONS TO CUT WIRES</span></div>";
+                                            t = "<div class='bomb-header' id='button-header'><span>ЖМИ КНОПКИ НИЖЕ ЧТОБЫ РЕЗАТЬ ПРОВОДА</span></div>";
                                             for (let e = 0; e < r.triggers.length; ++e) {
                                                 const n = r.triggers[e],
-                                                    i = n.name || "Wire";
+                                                    i = n.name || "Провод";
                                                 t += `<button type='button' ${n.hasBeenCut?"disabled":""} data-param='${n.index}' class='pure-input-1 bombintern-wiredbomb-button button-large pure-button button-bombintern'>${i} ${n.index}</button>`
                                             }
                                             e.$el.find("#bombintern-wiredbomb-triggers").html(t)
@@ -441,18 +441,18 @@
                                         break;
                                     case "CoffeeBomb":
                                         if (e.$el.find("#bombintern-coffeebomb-triggers").html(""), e.buildRuleFolder(a, "bombintern-coffeebomb-rules"), r.triggers && r.triggers.length > 0) {
-                                            t = "<div class='bomb-header' id='button-header'><span>PRESS TO ADD OR REMOVE INGREDIENTS</span></div>";
+                                            t = "<div class='bomb-header' id='button-header'><span>ЖМИ КНОПКИ ЧТОБЫ ДОБАВИТЬ ИЛИ УБРАТЬ ИНГРЕДИЕНТЫ</span></div>";
                                             for (let e = 0; e < r.triggers.length; ++e) {
                                                 const n = r.triggers[e];
                                                 t += `<div class='bombinterns-ingredient-controls'><span class='bombinterns-ingredient-name'>${n.ingredient}</span><br />`, t += `<button type='button' data-param='${n.ingredient}' class='pure-input-2 bombintern-coffeebomb-button bombintern-coffeebomb-remove-button button-large pure-button button-bombintern'>-</button>`, t += `<span class = 'bombinterns-ingredient-count'>${n.count}</span>`, t += `<button type='button' data-param='${n.ingredient}' class='pure-input-2 bombintern-coffeebomb-button bombintern-coffeebomb-add-button button-large pure-button button-bombintern'>+</button></div>`
                                             }
-                                            t += "<div class='bomb-header' id='brew-header'><span>PRESS WHEN READY TO BREW</span></div>", t += "<button type='button' class='pure-input-1 bombintern-coffeebomb-brew-button button-large pure-button button-bombintern'>Brew</button>", e.$el.find("#bombintern-coffeebomb-triggers").html(t)
+                                            t += "<div class='bomb-header' id='brew-header'><span>НАЖМИТЕ КОГДА ГОТОВЫ ГОТОВИТЬ</span></div>", t += "<button type='button' class='pure-input-1 bombintern-coffeebomb-brew-button button-large pure-button button-bombintern'>Brew</button>", e.$el.find("#bombintern-coffeebomb-triggers").html(t)
                                         }
                                         e.showScreen(".state-coffeebomb");
                                         break;
                                     case "FilingBomb":
                                         if (e.$el.find("#bombintern-filingbomb-triggers").html(""), e.buildRuleFolder(a, "bombintern-filingbomb-rules"), r.triggers.length > 0) {
-                                            t = "<div id='button-header'<br /><span>PRESS BELOW TO FILE</span><br /></div>";
+                                            t = "<div id='button-header'<br /><span>ЖМИТЕ КНОПКИ НИЖЕ ЧТОБЫ СОРТИРОВАТЬ</span><br /></div>";
                                             for (let e = 0; e < r.triggers.length; ++e) {
                                                 const n = r.triggers[e];
                                                 t += `<button type='button' ${n.hasBeenFiled?"disabled":""} data-param='${n.fullName}' class='pure-input-1 bombintern-filingbomb-button button-large pure-button button-bombintern'>${n.fullName}</button>`
@@ -475,7 +475,7 @@
                                         break;
                                     case "KeypadBomb":
                                         if (e.$el.find("#bombintern-keypadbomb-triggers").html(""), e.buildRuleFolder(a, "bombintern-keypadbomb-rules"), r.triggers && r.triggers.length > 0) {
-                                            t = "<div class='bomb-header' id='button-header'><span>Enter a 4-digit keycode:</span></div>";
+                                            t = "<div class='bomb-header' id='button-header'><span>Введите 4-циферный код:</span></div>";
                                             for (let e = 0; e < r.triggers.length; ++e) {
                                                 const n = r.triggers[e];
                                                 let i = n.key;
@@ -500,17 +500,17 @@
                             case "DayEnd":
                                 switch (a) {
                                     case "DayEndDecision":
-                                        e.$el.find("#bombintern-dayend-text").html("Day Complete!"), e.showScreen(".state-dayend");
+                                        e.$el.find("#bombintern-dayend-text").html("День Пройден!"), e.showScreen(".state-dayend");
                                         break;
                                     default:
-                                        e.$el.find("#bombintern-message-text").html("Day Complete!"), e.showScreen(".state-message")
+                                        e.$el.find("#bombintern-message-text").html("День Пройден!"), e.showScreen(".state-message")
                                 }
                                 break;
                             case "GameOver":
                                 switch (a) {
                                     case "GameOver":
                                     case "GameOverDecision":
-                                        e.$el.find("#bombintern-gameover-text").html("Game Over!"), e.$el.find("#bombintern-retry").hide(), e.$el.find("#bombintern-menu").hide(), "GameOverDecision" === a && (e.$el.find("#bombintern-retry").show(), e.$el.find("#bombintern-menu").show()), e.$el.find("#bombintern-gameover-rules").html(""), e.buildRuleFolder(e.lastPuzzle, "bombintern-gameover-rules"), e.showScreen(".state-gameover")
+                                        e.$el.find("#bombintern-gameover-text").html("Потрачено!"), e.$el.find("#bombintern-retry").hide(), e.$el.find("#bombintern-menu").hide(), "GameOverDecision" === a && (e.$el.find("#bombintern-retry").show(), e.$el.find("#bombintern-menu").show()), e.$el.find("#bombintern-gameover-rules").html(""), e.buildRuleFolder(e.lastPuzzle, "bombintern-gameover-rules"), e.showScreen(".state-gameover")
                                 }
                         }
                         "Puzzle" !== s && r && r.playerName && e.$el.find("#player").html(`<h1>${r.playerName}</h1>`), e.scrollToTopOnPuzzleStart(a), e.onResize()
@@ -596,19 +596,19 @@
                         if (r.rules && r.rules.length > 0 || r.sort && r.sort.length > 0) {
                             switch (s += "<div class='bomb-header' id='instruction-header'>", e) {
                                 case "SmashPuzzle":
-                                    s += "<span>READ INSTRUCTIONS BELOW TO HELP SMASH!</span>";
+                                    s += "<span>ЧИТАЙТЕ ИНСТРУКЦИИ НИЖЕ ЧТОБЫ ПОМОЧЬ ВАМ РЕЗАТЬ!</span>";
                                     break;
                                 case "WiredBomb":
                                 case "CoffeeBomb":
-                                    s += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                                    s += "<span>СЛЕДУЙТЕ ИНСТРУКЦИЯМ</span>";
                                     break;
                                 case "FilingBomb":
                                 case "CopierBomb":
                                     break;
                                 case "KeypadBomb":
-                                    s += "<span>FOLLOW THE INSTRUCTIONS</span>"
+                                    s += "<span>СЛЕДУЙТЕ ИНСТРУКЦИЯМ</span>"
                             }
-                            if (s += "</div>", s += "<div class='rules-folder-tab'><span>MANUAL</span></div><div class='rules-folder'>", "FilingBomb" === e) s += `<div class='rules-page'><span>${r.sort}</span></div>`;
+                            if (s += "</div>", s += "<div class='rules-folder-tab'><span>РУКОВОДСТВО</span></div><div class='rules-folder'>", "FilingBomb" === e) s += `<div class='rules-page'><span>${r.sort}</span></div>`;
                             else if ("CopierBomb" === e)
                                 for (let e = 0; e < r.rules.length; ++e) s += "<div class='rules-page copier-rule-page'>", o = r.rules[e], "" !== o.header && (s += `<div class='copier-icon'><img src='${(yield n(43305)(`./${o.header}.png`)).default}'/></div>`), s += `<span class='bombintern-rule copier-rule'>${o.body}</span>`, s += "</div>";
                             else
@@ -616,22 +616,22 @@
                             s += "</div>"
                         } else switch (e) {
                             case "SmashPuzzle":
-                                s += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE SMASHER!</span></div>";
+                                s += "<div class='bomb-header' id='instruction-header'><span>ТЫ РАЗБИВАЕШЬ!</span></div>";
                                 break;
                             case "WiredBomb":
-                                s += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE CUTTER!</span></div>";
+                                s += "<div class='bomb-header' id='instruction-header'><span>ТЫ РЕЖЕШЬ!</span></div>";
                                 break;
                             case "CoffeeBomb":
-                                s += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE BREWER!</span></div>";
+                                s += "<div class='bomb-header' id='instruction-header'><span>ТЫ ГОТОВИШЬ!</span></div>";
                                 break;
                             case "FilingBomb":
-                                s += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE FILER!</span></div>";
+                                s += "<div class='bomb-header' id='instruction-header'><span>ТЫ СОРТИРУЕШЬ!</span></div>";
                                 break;
                             case "CopierBomb":
-                                s += "<div class='bomb-header' id='instruction-header'><span>FIX THE COPIER!</span></div>";
+                                s += "<div class='bomb-header' id='instruction-header'><span>ПОЧИНИ КСЕРОКС!</span></div>";
                                 break;
                             case "KeypadBomb":
-                                s += "<div class='bomb-header' id='instruction-header'><span>CRACK THE CODE!</span></div>"
+                                s += "<div class='bomb-header' id='instruction-header'><span>ПОДБЕРИ КОД!</span></div>"
                         }
                         i.$el.find(`#${t}`).html(s)
                     }))()
